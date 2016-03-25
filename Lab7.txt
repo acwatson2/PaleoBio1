@@ -1,0 +1,102 @@
+Adam Watson
+Lab 7
+
+Part 1
+	1) They represent the oldest and youngest occurrences of a fossil. 
+	2) > maxGenus <- tapply(DataPBDB[,"genus"],DataPBDB[,"max_ma"],max)
+	3) > minGenus <- tapply(DataPBDB[,"genus"],DataPBDB[,"min_ma"],min)
+	4) > Temp <- sort(table(DataPBDB[,"genus"]))
+	   > maxGenusOccurences <- names(Temp[which(Temp == max(Temp))])
+	   [1] Anadara 
+	5) > maxGenusTemp <- tapply(DataPBDB[,"max_ma"],DataPBDB[,"genus"],max)
+  	   > maxGenusRange <- maxGenusTemp[“Anadara"]
+	   > MaxGenusRange
+   	   Anadara
+	        66
+  	   > minGenusTemp <- tapply(DataPBDB[,"min_ma"],DataPBDB[,"genus"],min)
+  	   > minGenusRange <- minGenusTemp[“Anadara"]
+	   > minGenusRange
+   	   Anadara
+	 	 0
+Part 2
+	1) > mean(sample(Lucina[,"paleolng"],length(Lucina[,"paleolng"]),replace=TRUE))
+	   This is taking the mean of Lucina based on a random sample of paleo longitudes 	   dividing by the length of Lucina and allowing for repeated values. 
+	2) > plot(density(ResampledMeans)) Yes, its Gaussian. It’s the mean of the mean,
+	     with deviation equal to both sided of the curve.  
+	3) > mean(ResampledMeans)
+	   [1] 24.16227 which is almost identical to the original mean which is 24.1997. 
+	4) > sortedMeans <- sort(ResampledMeans)
+	5) > TwoFive <- 0.025*length(sortedMeans)
+	   > TwoFive
+	  [1] 25
+	   > NinetySevenfive <- 0.975*length(sortedMeans)
+	   > NinetySevenfive
+	  [1] 975
+	6) > Because they are the upper and lower bounds or values of the resampled    		     mean, giving them a range upper and lover, with a value in between. 
+Part 3
+	1) > Johnny five says, Lucina is likely, alive.
+	2) > estimateExtinction(Dallarca[,”min_ma"],0.95)
+	     Earliest   Latest 
+              2.58800 -3.88749 
+	3) Based on the confidence number Dallarca should still be alive.  
+	4) The confidence interval should not be trusted but the pure reading should be.
+           The last recorded appearance of Dallarca was over 2.5 million years ago, it is               
+           unlikely still alive or that it will be around millions of years from now. 
+Part 4
+	1) 
+	2) The likelihood of erosion taking place whipping out ranges of stratigraphic 
+	   units or reworking the fossils into earlier units would affect the
+           distribution.
+Part 5
+	1) > length(DataPBDB[,"genus"])
+	  [1] 67641
+	   > length(ExtantData[,"genus"])
+	  [1] 59117
+	   > length(DataPBDB[,"genus"])-length(ExtantData[,"genus"])
+	  [1] 8524
+	2) > length(unique(DataPBDB[,”genus"]))
+	  [1] 1019
+	   > length(unique(ExtantData[,”genus"]))
+	  [1] 532
+	   About 52 percent are extant today.
+	3) >
+	4) > 
+	5) >  Use the following to subset each genera and then I used the function given
+           to calculate the confidence interval. (Insert genera here) <-
+           subset(DataPBDB,DataPBDB[,"genus"]==“(insert genera here)“)
+	   > estimateExtinction(Scrobicularia[,"min_ma"],0.95)
+	    Earliest    Latest 
+             0.01170 -34.70966 
+	   > estimateExtinction(Meiocardia[,"min_ma"],0.95)
+	    Earliest    Latest 
+             0.011700 -5.329574 
+	   > estimateExtinction(Dimya[,"min_ma"],0.95)
+	    Earliest    Latest 
+             0.781000 -2.054688 
+	   > estimateExtinction(Digitaria[,"min_ma"],0.95)
+	    Earliest    Latest 
+             0.781000 -3.761154 
+	   > estimateExtinction(Cuspidaria[,"min_ma"],0.95)
+	    Earliest    Latest 
+             2.5880000 0.7771965 
+	   > estimateExtinction(Arctica[,"min_ma"],0.95)
+	    Earliest    Latest 
+             0.011700 -1.799104 
+	   > estimateExtinction(Aloides[,"min_ma"],0.95)
+	    Earliest   Latest 
+             5.333     -Inf 
+	   > estimateExtinction(Kurtiella[,"min_ma"],0.95)
+            Earliest    Latest 
+             0.01170 -34.70966 
+	   > estimateExtinction(Gouldia[,"min_ma"],0.95)
+            Earliest    Latest 
+             0.011700 -2.047386 
+	   > estimateExtinction(Acrosterigma[,"min_ma"],0.95)
+            Earliest    Latest 
+             0.011700 -3.481128
+	   About 99.99 percent have confidence intervals that suggest they are alive
+           today.
+
+
+
+
