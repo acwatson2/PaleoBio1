@@ -1,0 +1,15 @@
+Adam WatsonLab9Part 11) North America is further West than it was in the Cretaceous.2) The plot function plots the map data while the rgb function sets the intensity of the colors of red, green and blue and the level of transparency.  The lty is a line type that defines the borders.3) > AlbianMap<-downloadPaleogeography(Age=110)4) plot(AlbianMap,col=rgb(0,1,0,0.33),lty=0.01,add=TRUE)5) North and South6) East and West
+
+Part 21) plot(PEBoundryMap,col=rgb(0,1,1,0.33),lty=0.01)2) >DataPBDB<downloadPBDB(Taxa=c("Anthozoa"),StartInterval="Paleocene",StopInterval="Eocene")3) > dim(DataPBDB) [1] 2847   264) > dimnames(DataPBDB)[[2]] [1] "occurrence_no"   "record_type"     "reid_no"         "flags" 
+ Number of occurrences, how occurred and reid and flags             [5] "collection_no"   "identified_name" "identified_rank" "identified_no" 
+ Collection number, identified taxonomic name, taxonomic rank, and taxonomic number      [9] "difference"      "accepted_name"   "accepted_rank"   "accepted_no" 
+ Different name, the accepted name and rank accepted number  [13] "early_interval"  "late_interval"   "max_ma"          "min_ma"
+The geographic time interval as well as time interval in millions of years         [17] "reference_no"    "paleomodel"      "paleolng"        "paleolat" 
+The reference number of animal, paleo location and the paleo latitude and longitude       [21] "geoplate"        "phylum"          "class"           "order"
+The geo plate animal locate in, phylum, class and order.           [25] "family"          "genus"
+The family and genus   5) > points(DataPBDB[,"paleolng"],DataPBDB[,"paleolat"])6) Most of the Anthozoa in the Eastern hemisphere occur in Europe and are primarily marine organisms. A higher standing sea must have existed in this region during this time. 
+
+Part 31) >DataPBDB<-downloadPBDB(Taxa=c("Perissodactyla"),StartInterval="Paleogene",StopInterval="Paleogene")2) The odd toe (odd toed ungulate) is a defining feature and zebras and rhionos are common examples.3) subset(DataPBDB,DataPBDB[,"collection_no"]==112723)4) 501 is the geo_plate id associated with this collection and is located in modern day Pakistan. 
+5) > subsetPerisData <- subset(DataPBDB,DataPBDB[,"geoplate"]==501)
+6) Region-x (paleo Pakistan) moved North from the Albanian to present day colliding with Asia around 80 million years ago and continues to move North today.  
+7)It is most likely that Perissodactyla migrated from China to region-x as it appeared first in china around 58 million years ago. While they are of the same order, at the family and genus levels they differ, giving good evidence they came from a different location altogether but first appeared in China then India and Pakistan (region-x). 	
