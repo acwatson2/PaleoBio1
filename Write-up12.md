@@ -1,0 +1,17 @@
+Adam Watson
+Write-up12
+
+> 9/10
+
+## Summary
+The paper, The Red queen and the Court Jester hypothesis discuses the effects that abiotic and biotic factors have on species diversity through time, specifically the Phanerozoic time frame.  The author states that the two models appear to Òoperate predominantly over different geographic and temporal scalesÓ. Factors such as competition, predation and body size form the biotic, the red queen method, which Òshape ecosystems locally and over short time spans, while the abiotic factors, the court jester method, such as climate, oceanographic and tectonics events shape larger scale patterns regionally and globallyÓ. Further the authors suggest a multilevel system, which incorporates both models working together to effect species diversity. The author uses the largest-scale taxic investigations and other studies to see how these three models to see if they correspond to the there predictions.
+
+As a student of geology I have studied, mainly, the effects that tectonics and weathering have had on the earth. I have learned how the closing of seaways and the corresponding rerouting of ocean waters have affected life, both in the sea and on land. My recent studies in paleobiology have lead me to learn other factors, such as biotic factors as discussed in this paper and get a better understanding of what is at work in regards to evolution and life on earth. While the geologist in me wants to focus mainly on the abiotic factors the paper makes good arguments for a multilevel model, suggesting that the biotic factors are on a more Òlocal scale over a short scale while the abiotic are on a regional/global scale over longer time spans. Overall the paper was easy to follow, studied life in the oceans as well as the sea and gave rise to my interest in the relations of these two models. 
+
+Although this paper was easy to follow, more or less, I was left with a question. What were the controls set on the extinctions and diversity of animals. Specifically what was done to make sure the studies used in this paper correctly accounted for diversity and took all factors into account. IÕm sure that the studies used had corrected data but it would have helped to read in brief what the controls where.
+
+> I am not sure what you mean by "the controls"
+
+Overall the graphs and figures were good yet I did not fully understand figure one and I think it could have been explained better.  Besides that, figures two and three were better and table one gave important information and did so in a very easy to understand way.
+
+> Okay, but what did they depict? Remember the point of this sub-section is to restate what the graphs demonstrated, not just to offer opinions on them.
